@@ -1,0 +1,156 @@
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1800px;
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        max-width: 1800px;
+
+    }
+
+    .indexList {
+        overflow: scroll;
+    }
+
+    .indexList .row {
+        width: 1000px;
+    }
+}
+
+body {
+    background: #F7F9FC;
+    /* background: #2c2c2c; */
+}
+
+h4 {
+    color: #5FA4D7;
+
+}
+
+
+h4>small {
+    color: #000;
+}
+
+p {
+    color: #333333;
+    margin: 0;
+}
+
+.navbar {
+    background: #fff;
+}
+
+.navbar-brand {
+    color: #5FA4D7;
+}
+
+.btn {
+    /* background: #B2D7F1; */
+    border: unset;
+    border-radius: 20px;
+    /* color: #fff; */
+
+    border: 1px #5Ea4DA solid;
+    color: #000;
+}
+
+.btnAdd {
+    background: #5Ea4DA;
+    color: #000;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.btnUpdate {
+    background: #EBEFF5;
+}
+
+.btn svg {
+    width: 16px;
+}
+
+.btnAdd svg {
+    height: 16px;
+    fill: #fff;
+}
+
+.btnAdd:hover svg {
+    fill: #000;
+}
+
+
+.btn:hover {
+    background: #d6edff;
+    color: #000;
+}
+
+/* .indexIcon{
+    height: 18px;
+} */
+
+.form-check-input {
+    border: 1px solid #1c1c1c;
+}
+
+.UpdateItemHeight {
+    width: auto;
+    height: 300px;
+    overflow: scroll;
+
+}
+
+
+.UpdateItemHeight img {
+    width: 15px;
+    margin: auto 0;
+}
+
+.UpdateItemHeight div {}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchSoftwareItem p {
+    background: #f0f4f7;
+    margin: 0 0 10px 0;
+    /* padding: 5px ; */
+}
+
+.border-bule {
+    border-bottom: 3px solid #5FA4D7;
+}
+
+
+.bg-F7F9FC {
+    background-color: #F7F9FC;
+}
+
+.bg-eaedf1 {
+    background-color: #eaedf1;
+}
+
+.color-6E6E6E {
+    color: #6E6E6E;
+}
+
+.indexgroup div {
+    aspect-ratio: 1/.5;
+    transition: .5s;
+
+}
+
+
+.indexgroup div:hover{
+    transform: scale(1.1);
+    border-bottom: #5Ea4DA solid 4px;
+    z-index: 1;
+}
+.indexgroup img {
+    height: 75px;
+}

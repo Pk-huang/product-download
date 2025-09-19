@@ -1,0 +1,58 @@
+    武漢  確認上傳 UG 是否成功 
+         建立新的產品 
+
+    BU   上傳 網址並且建立 下載名稱
+         建立 產品群組 並且連結團體
+
+    web  完成特殊需求
+
+
+1. 使用者進入畫面 需呈現不同 內容 
+
+
+目前需求
+
+   1. 用搜尋功能 >> 產品 >> 上傳軟體
+   2. 單一軟體 對多個產品
+      2-1 需建立產品群組系列
+      2-2 可以指定 產品群組 上傳軟體
+
+--------------------
+UX 
+
+     上傳檔案
+          單一檔案對應 單一 或是 多個 機種 login >> upload software( setting info ) >> search product / product group >> upload finsih
+
+     建立群組
+          login >> create product group ( setting info ) >> add product >> finsih
+
+     新建產品
+          login >> create product ( setting info ) >> finsih    
+
+     修改產品
+          login >> search product >> edit product ( setting info ) >> finsih      
+
+     查詢產品
+          login >> search product >> list of products >> product detail          
+          
+--------------------
+
+User fuction
+
+     BU : 上傳檔案 , 建立群組 , 修改產品 ,查詢產品
+     武漢 : 建立產品 ,查詢產品
+
+     super admin ( web dev ) : 所有功能
+
+--------------------
+
+單一section 的問題
+
+     list of products
+          1. download group : 如果有多個群組 全顯示？
+          2. produt line 和 download group 都要顯示？
+
+--------------------
+
+
+ 
