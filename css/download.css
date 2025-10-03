@@ -1,37 +1,43 @@
-@media (min-width: 1800px) {
-    .container {
-        max-width: 1800px;
-    }
+/* ================================
+   Color Tokens – Dashboard Palette
+   ================================= */
+:root {
+    /* Primary (Blue) */
+    --color-primary-500: #2563EB;
+    --color-primary-600: #1E40AF;
+    --color-primary-700: #1E3A8A;
+
+    /* Secondary (Teal) */
+    --color-secondary-500: #14B8A6;
+    --color-secondary-600: #0D9488;
+    --color-secondary-700: #0F766E;
+
+    /* Status */
+    --color-success: #16A34A;
+    --color-error: #DC2626;
+    --color-warning: #D97706;
+    --color-info: #0284C7;
+
+    /* Neutrals */
+    --gray-900: #0F172A;
+    --gray-700: #334155;
+    --gray-500: #64748B;
+    --gray-300: #CBD5E1;
+    --gray-100: #F8FAFC;
+    --white: #FFFFFF;
 }
 
-@media (max-width:900px) {
-    .container {
-        max-width: 1800px;
 
-    }
-
-    .indexList {
-        overflow: scroll;
-    }
-
-    .indexList .row {
-        width: 1000px;
-    }
-}
 
 body {
     background: #F7F9FC;
     /* background: #2c2c2c; */
+    position: relative;
 }
 
 h4 {
-    color: #5FA4D7;
+    color: #0F172A;
 
-}
-
-
-h4>small {
-    color: #000;
 }
 
 p {
@@ -39,26 +45,18 @@ p {
     margin: 0;
 }
 
-.navbar {
-    background: #fff;
-}
-
-.navbar-brand {
-    color: #5FA4D7;
-}
 
 .btn {
     /* background: #B2D7F1; */
     border: unset;
     border-radius: 20px;
     /* color: #fff; */
-
     border: 1px #5Ea4DA solid;
     color: #000;
 }
 
 .btnAdd {
-    background: #5Ea4DA;
+    background: #1379d4;
     color: #000;
     color: #fff;
     border-radius: 50px;
@@ -67,6 +65,7 @@ p {
 .btnUpdate {
     background: #EBEFF5;
 }
+
 
 .btn svg {
     width: 16px;
@@ -87,9 +86,6 @@ p {
     color: #000;
 }
 
-/* .indexIcon{
-    height: 18px;
-} */
 
 .form-check-input {
     border: 1px solid #1c1c1c;
@@ -102,28 +98,8 @@ p {
 
 }
 
-
-.UpdateItemHeight img {
-    width: 15px;
-    margin: auto 0;
-}
-
-.UpdateItemHeight div {}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.SearchSoftwareItem p {
-    background: #f0f4f7;
-    margin: 0 0 10px 0;
-    /* padding: 5px ; */
-}
-
 .border-bule {
-    border-bottom: 3px solid #5FA4D7;
+    border-bottom: 3px solid #1E3A8A;
 }
 
 
@@ -135,22 +111,41 @@ p {
     background-color: #eaedf1;
 }
 
-.color-6E6E6E {
-    color: #6E6E6E;
+/* 10/2 */
+
+nav .btn {
+    text-align: left;
+    width: 100%;
+    border: unset;
+    border-radius: unset;
+    padding: .5rem 2em .5rem 2em;
+    display: flex;
+    margin: .25rem 0;
 }
 
-.indexgroup div {
-    aspect-ratio: 1/.5;
-    transition: .5s;
-
+nav h5 {
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: .75rem;
 }
 
+nav svg {
+    fill: #fff;
+}
 
-.indexgroup div:hover{
-    transform: scale(1.1);
-    border-bottom: #5Ea4DA solid 4px;
-    z-index: 1;
+nav .btn:hover {
+    background: #fff !important;
 }
-.indexgroup img {
-    height: 75px;
+
+nav .btn:hover  h5{
+   color: #5FA4D7;
 }
+
+nav .btn:hover  svg{
+   fill: #5FA4D7;
+}
+
+/* nav .active{
+    color: #fff !important;
+    background: #383838 !important;
+} */

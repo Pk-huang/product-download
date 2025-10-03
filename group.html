@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/download.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg border-bule">
+        <div class="container">
+            <a class="navbar-brand " href="#">Dowload & Support</a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  text-white" aria-current="page" href="#">一對多(檔案)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">大量上傳</a>
+                    </li>
+
+                </ul> -->
+
+
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <a class="d-flex w-auto ms-lg-4 text-white" href="#">
+
+                Logout
+            </a>
+        </div>
+    </nav>
+
+    <div class="container  mt-5 pb-5 px-0 ">
+        <!-- <h4 class="px-5 py-4 mb-3 bg-white ">New Product</h4> -->
+        <!-- <form action="" class=" px-5 py-4 mb-3 bg-white  ">
+
+
+
+            <div class="mb-4">
+                <label for="ProductName" class="form-label">
+                    <h5 class="text-bg-danger  px-4 py-2">Delet Group</h5>
+                </label>
+
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <h5 class="py-3">欲刪除的群組</h5>
+                <div>
+                    <span class="text-bg-warning p-2">IFP34</span>
+                </div>
+            </div>
+
+
+
+  
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                System prompt</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Save Success
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  d-flex justify-content-end ">
+                <button type="button" class="btn btnAdd px-5 my-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Delet It
+                </button>
+            </div>
+
+
+
+
+        </form> -->
+
+        <h4 class="px-5 py-4 bg-white ">一對多上傳</h4>
+        <form action="" class=" px-5 py-4 mb-3 bg-white  ">
+
+
+
+            <div class="row p-3 ">
+                <div class=" mb-3 fw-bold">
+                    <div class="row px-1 bg-F7F9FC py-3">
+                        <div class="col-1">+</div>
+                        <p class="col-2">Display Name</p>
+                        <p class="col-2">Category of doc/file</p>
+
+                        <p class="col-3">File Url</p>
+                        <p class="col-2">Show</p>
+                        <p class="col-1 text-center">Delete</p>
+                    </div>
+                </div>
+                <div action="" class="py-3 border-bottom">
+                    <div class="row">
+                        <div class="col-1">
+                            +
+                        </div>
+                        <div class=" col-2">
+                            <input type="text" class="form-control border-0 bg-eaedf1" placeholder="1"
+                                value=" CDE92UW User Guide">
+                        </div>
+                        <div class=" col-2">
+
+                            <select class="form-select border-0 bg-eaedf1" aria-label="Category selection">
+                                <option selected>User Guides</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-3">
+                            <input type="text" class="form-control fw-light bg-F7F9FC border-0"
+                                id="formGroupExampleInput" placeholder="Dropbox URL">
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input fw-light" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+
+                        <div class="col-1 text-center"><img src="/img/delet.svg" alt="" style="width: 15px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="my-5">選擇機型</h5>
+            <div class="row mb-5">
+                <div class="col-12 mb-3">
+                    <input type="text" class="form-control fw-light bg-F7F9FC border-0" id="formGroupExampleInput"
+                        placeholder="Search Prosuct Name or Group Name">
+                </div>
+                 <h5>Group </h5>
+                <div class="px-4 my-3 text-white">
+                    <span class="bg-primary p-2">Group one</span>
+                    <span class="bg-success p-2">Group two</span>
+                </div>
+                <h5>product</h5>
+                <div class="px-4 my- text-white">
+                    <span class="bg-primary p-2">VP1655</span>
+                    <span class="bg-primary p-2">VX1274</span>
+
+                    <span class="bg-success p-2">XG4646</span>
+                    <span class="bg-success p-2">VG454646</span>
+                </div>
+
+            </div>
+
+
+
+            <button type="button" class="btn px-4 btnAdd" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="mx-2">
+                    <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                </svg>
+                Add File
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                System prompt</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="d-flex">
+                                <h4>Base Information</h4>
+                                <p>vp1655</p>
+                                <p>>></p>
+                                <p>VP1755</p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
