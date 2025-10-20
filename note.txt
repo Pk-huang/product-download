@@ -127,3 +127,25 @@ User fuction
      命名規則 需一至幫助 覆蓋
 
      ifp65 對應 ifp6552.pdf
+
+
+10/15
+
+     覆蓋功能 須建立 是否 自動更新的ui
+     區域限定 ui 建立
+     shadow 加深
+
+
+10/17 
+
+    須說明哪邊要 think
+    group list 建立 group manger
+    能夠修改管理 group
+    cn 有 cn 的group , pg 有 pg 的group
+    只產生一個 card
+    版本回覆 使用group manger
+    近來進入 product list
+
+
+    星號 視覺更改
+    

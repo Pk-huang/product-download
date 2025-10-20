@@ -1,39 +1,7 @@
-/* ================================
-   Color Tokens – Dashboard Palette
-   ================================= */
-:root {
-    /* Primary (Blue) */
-    --color-primary-500: #2563EB;
-    --color-primary-600: #1E40AF;
-    --color-primary-700: #1E3A8A;
-
-    /* Secondary (Teal) */
-    --color-secondary-500: #14B8A6;
-    --color-secondary-600: #0D9488;
-    --color-secondary-700: #0F766E;
-
-    /* Status */
-    --color-success: #16A34A;
-    --color-error: #DC2626;
-    --color-warning: #D97706;
-    --color-info: #0284C7;
-
-    /* Neutrals */
-    --gray-900: #0F172A;
-    --gray-700: #334155;
-    --gray-500: #64748B;
-    --gray-300: #CBD5E1;
-    --gray-100: #F8FAFC;
-    --white: #FFFFFF;
-}
-
-
-
 body {
-    background: #F7F9FC;
-    /* background: #2c2c2c; */
-    position: relative;
+    background: #f8f9fa;
 }
+
 
 h4 {
     color: #0F172A;
@@ -99,7 +67,11 @@ p {
 }
 
 .border-bule {
-    border-bottom: 3px solid #1E3A8A;
+    border-bottom: 3px solid #5Ea4DA;
+}
+
+.border-red {
+    border-bottom: 3px solid #da5e5e;
 }
 
 
@@ -138,14 +110,54 @@ nav .btn:hover {
 }
 
 nav .btn:hover  h5{
-   color: #5FA4D7;
+   color: #5FA4D7 !important;
 }
 
 nav .btn:hover  svg{
-   fill: #5FA4D7;
+   fill: #5FA4D7 !important;
 }
 
 /* nav .active{
     color: #fff !important;
     background: #383838 !important;
 } */
+
+.indexListItem:hover {
+    background: #f7f9fcdc !important;
+}
+
+.accordion-button{
+     background: #fff !important;
+}
+
+.accordion-button h5{
+   color: #5FA4D7 !important;
+}
+
+.accordion-button svg{
+   fill: #5FA4D7 !important;
+}
+
+.accordion-button.collapsed{
+     background: transparent !important;
+}
+
+.accordion-button.collapsed h5{
+    color: #fff !important;
+}
+
+.accordion-button.collapsed svg{
+   fill: #fff !important;
+}
+
+.show button{
+     background: #5797c9 !important;
+}
+
+.productList svg {
+    width: 24px;
+    height: 24px;
+    fill: #0091ff;
+    vertical-align: middle;
+    margin-right: 8px;
+}
