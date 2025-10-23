@@ -18,30 +18,13 @@
 
 
     <div class="row vh-100">
-        <div class="col-12 border-bule">
-            <div class="row py-3">
-                <div class="col px-5">
+        <nav class="col-2   border-bule px-0 shadow" style="background-color: #5Ea4DA;">
+            <div class="ps-4 py-3 bg-white">
 
 
-                    <h2 class="m-0">Downlod & Upload</h2>
+                <h2 class="m-0">Downlod & Upload</h2>
 
-                </div>
-
-                <div class="col-10  top-0 px-3" style="z-index: 1;">
-
-
-
-                    <form class="d-flex w-100  " role="search">
-                        <input class="form-control me-2 bg-eaedf1 border-0 " type="search" placeholder="Search"
-                            aria-label="Search">
-                    </form>
-
-
-                </div>
             </div>
-        </div>
-
-        <nav class="col-2   border-bule px-0 " style="background-color: #5Ea4DA;height: calc(100vh - 73.3906px);">
             <ul class="nav flex-column  text-left">
 
 
@@ -62,9 +45,10 @@
                     </button>
                 </li>
 
+               
                 <li class="nav-item">
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNewProduct"
-                        aria-controls="offcanvasNewProduct">
+                    <button class="accordion-button collapsed btn " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg id="a" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 49">
 
@@ -74,53 +58,11 @@
                             <rect x="10.28" y="21.87" width="16" height="4.5" rx="2.25" ry="2.25"
                                 transform="translate(-5.84 42.4) rotate(-90)" />
                         </svg>
-
-                        <h5 class=" mb-0">新建產品</h5>
+                        <h5>Group List</h5>
                     </button>
-                </li>
-                <li class="nav-item">
-                    <div class="accordion accordion-flush bg-transparent" id="accordionFlushExample">
-                        <div class="accordion-item bg-transparent">
-                            <h2 class="accordion-header bg-transparent">
-                                <button class="accordion-button collapsed btn " type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    <?xml version="1.0" encoding="UTF-8"?>
-                                    <svg id="a" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 49">
-
-                                        <path
-                                            d="m30.39,43.79c.83,0,1.51-.68,1.51-1.51V15.04h-7.57c-1.67,0-3.03-1.35-3.03-3.03v-7.57H6.18c-.83,0-1.51.68-1.51,1.51v36.32c0,.83.68,1.51,1.51,1.51h24.21ZM.12,5.97C.12,2.63,2.84-.09,6.18-.09h15.65c1.61,0,3.15.63,4.28,1.77l8.56,8.56c1.13,1.13,1.77,2.68,1.77,4.28v27.76c0,3.34-2.71,6.05-6.05,6.05H6.18c-3.34,0-6.05-2.71-6.05-6.05V5.97Z" />
-                                        <rect x="10.28" y="21.87" width="16" height="4.5" rx="2.25" ry="2.25" />
-                                        <rect x="10.28" y="21.87" width="16" height="4.5" rx="2.25" ry="2.25"
-                                            transform="translate(-5.84 42.4) rotate(-90)" />
-                                    </svg>
-                                    <h5>Group</h5>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body p-0">
-                                    <button class="btn m-0">
-                                        <h5>Create Group</h5>
-                                    </button>
-                                    <button class="btn m-0">
-                                        <h5>
-                                            Delet Group
-                                        </h5>
-                                    </button>
-                                    <button class="btn m-0">
-                                        <h5>
-                                            Edit Group
-                                        </h5>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
 
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
 
                     <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasUploadMany"
                         aria-controls="offcanvasUploadMany">
@@ -135,7 +77,7 @@
                         </svg>
                         <h5>檔案上傳</h5>
                     </button>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
 
@@ -161,24 +103,243 @@
 
 
 
-        <div class="col p-0  overflow-y-scroll pt-5" style="height: calc(100vh - 73.3906px);">
+        <div class="col p-0  overflow-y-scroll pt-5">
 
             <div class="d-flex flex-wrap ps-5">
+                <h2 class="mb-5 py-2 border-bule w-100">Prodcut list</h2>
+                <section class="  col-12 ">
+                    <div class="row pt-5 pb-4 px-5  align-items-center justify-content-between ">
+                        <form class="d-flex col  bg-secondary-subtle  search-bar py-1 rounded" role="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                <path
+                                    d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+                            </svg>
+                            <input class="form-control me-2 cborder-0  bg-transparent" type="search"
+                                placeholder="Search" aria-label="Search">
+                        </form>
+                        <div class="col-4">
+                            <button class="btn btnAdd rounded">
+                                <h6>Create Group</h6>
+                            </button>
+                        </div>
+                    </div>
 
-                <div class="  pb-5 px-0 col-12">
+                    <div class="indexList bg-white px-5 py-4 shadow border-bule">
+
+
+
+
+                        <div class="col-12 align-items-center justify-content-between d-flex py-3 mb-3">
+                            <div class="col">
+                                <h4 class="">List Of Product</h4>
+                            </div>
+                            <div class=" col-1 ">
+                                <div class="dropdown">
+                                    show
+                                    <button class="btn btnUpdate dropdown-toggle " type="button"
+                                        id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                        20
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                        <li><a class="dropdown-item" href="#">20</a></li>
+                                        <li><a class="dropdown-item" href="#">50</a></li>
+                                        <li><a class="dropdown-item" href="#">100</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row fw-bold  bg-F7F9FC py-3 border-bottom">
+                            <div class="col-1 ">Select</div>
+                            <div class="col-2">Name : click to edit info</div>
+                            <div class="col-1">Category</div>
+                            <div class="col-1">Product Line</div>
+                            <div class="col-3">Download Group</div>
+                            <div class="col">Modified</div>
+                            <div class="col">Modified Date</div>
+                        </div>
+
+                        <div>
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
+
+                                    <div class="col-1 ">
+
+                                        <input type="checkbox" class="form-check-input mx-2">
+                                    </div>
+                                    <div class="col-2"><a href="" class=" ">VP1655</a> </div>
+                                    <div class="col-1">Monitor</div>
+                                    <div class="col-1">VP series</div>
+                                    <div class="col-3">Group Name</div>
+                                    <div class="col">Mark</div>
+                                    <div class="col">2024/11/1 10:01</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <nav aria-label="Page navigation example" class="my-3">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+
+
+                <!-- <section class="  pb-5 px-0 col-12">
 
 
 
                     <div class="px-5 py-4  bg-white shadow-sm rounded-2 border-bule productList">
                         <h3 class=" py-4 mb-3 ">
-                            Product : VP1655
+                            Product : VP1655 <button type="button"
+                                class="btn px-4 mx-1 text-light bg-danger">Delete</button>
                         </h3>
                         <h4><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                 <path
                                     d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
                             </svg>
-                            Base Information <button type="button" class="btn px-4 mx-1"
-                                style="background: #db0025;">刪除</button></h4>
+                            Base Information</h4>
                         <form action="" class="mt-3 mb-5" style="background: #fff;">
                             <div class="mb-3">
                                 <label for="formGroupExampleInput" class="form-label fw-bold">Product Name</label>
@@ -221,15 +382,17 @@
 
                         </form>
 
-                    
 
 
 
-                        <h4 class="mb-4" style="color: #333333;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+
+                        <h4 class="mb-4" style="color: #333333;"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640">
                                 <path
                                     d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
                             </svg>
-                            File upload and settting</h4>
+                            File upload and settting <button type="button"
+                                class="btn px-4 mx-1 bg-white text-primary">revison</button></h4>
 
                         <div class="row  fw-bold  px-2 py-3 bg-F7F9FC border-bottom">
                             <div class="col-1">Order</div>
@@ -242,9 +405,7 @@
                             <div class="col-1 ">Delete</div>
                         </div>
                         <div class="UpdateItemHeight px-1 border-bottom">
-                            <!-- Row 1 -->
-
-                            <!-- 是否讓 user 直接更新？？？  -->
+                       
 
                             <form class="row py-4 border-bottom">
                                 <div class="col-1">
@@ -406,7 +567,7 @@
                             </form>
 
                         </div>
-                        
+
                         <div class="col-12 mt-5 d-flex justify-content-end ">
                             <button type="button " class="btn px-4 btnAdd" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
@@ -417,7 +578,7 @@
 
 
 
-                        <h4 class="mb-4 py-2   " style="color: #333333;">
+                        <h4 class="mb-4 py-2   text-info">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                 <path
                                     d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
@@ -430,21 +591,19 @@
 
                         <div class="row p-3 ">
                             <div class=" fw-bold">
-                                <div class="row px-1 bg-F7F9FC py-3 border-bottom">
-                                    <div class="col-1">+</div>
-                                    <p class="col-2">Display Name</p>
-                                    <p class="col-2">Category of doc/file</p>
+                                <div class="row px-1 text-info py-3 border-bottom bg-F7F9FC border-bule">
 
-                                    <p class="col-3">File Url</p>
-                                    <p class="col-2">Show</p>
-                                    <p class="col-1 text-center">Delete</p>
+                                    <p class="col-2 text-info">Display Name</p>
+                                    <p class="col-2 text-info">Category of doc/file</p>
+
+                                    <p class="col-3 text-info">File Url</p>
+                                    <p class="col-2 text-info">Show</p>
+                                    <p class="col-1 text-center text-info">Delete</p>
                                 </div>
                             </div>
                             <div action="" class="py-3 border-bottom indexListItem">
                                 <div class="row">
-                                    <div class="col-1">
-                                        +
-                                    </div>
+
                                     <div class=" col-2">
                                         <input type="text" class="form-control border-0 bg-F7F9FC" placeholder="1"
                                             value=" CDE92UW User Guide">
@@ -477,6 +636,18 @@
                                 </div>
                             </div>
 
+                            <div action="" class="py-3 border-bottom indexListItem d-flex">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="mx-2">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                                </svg>
+                                <p class="text-primary">Add File</p>
+
+                            </div>
+
+
+
                             <div class="col-12 mt-5 d-flex justify-content-end">
                                 <button type="button" class="btn px-4 btnAdd" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal">
@@ -484,10 +655,9 @@
                                         <path
                                             d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                                     </svg>
-                                    Add File
+                                    Save change
                                 </button>
 
-                                <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -519,193 +689,12 @@
                         </div>
 
 
-                    </div>
-                </div>
-
-
-                <!-- <div class="  pb-5 px-0 col-12">
-                    <div class="bg-white shadow-sm rounded-2 border-red px-5 py-4 mb-3">
-                        <form action="" class=" py-4 mb-3 bg-white  ">
-
-                            <div class="mb-4">
-
-                                <h4 class="text-danger py-2">Delet Group</h4>
-
-
-                                <input class="form-control me-2 bg-F7F9FC border-0 my-3" type="search"
-                                    placeholder="Search" aria-label="Search">
-                                <h5 class="py-3">欲刪除的群組</h5>
-                                <div>
-                                    <span class="text-bg-warning p-2">IFP34 X</span>
-                                    <span class="text-bg-warning p-2">IFP34 X</span>
-                                    <span class="text-bg-warning p-2">IFP34 X</span>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                System prompt</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Save Success
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12  d-flex justify-content-end ">
-                                <button type="button" class="btn btnAdd px-5 my-3 bg-danger" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Delet It
-                                </button>
-                            </div>
-
-
-
-
-                        </form>
-                    </div>
-                </div>
-                <div class="  pb-5 px-0 col-12">
-                    <div class="bg-white shadow-sm rounded-2 border-bule px-5 py-4 mb-3">
-                        <h4 class="offcanvas-title " id="offcanvasTopLabel">Create Group</h4>
-                        <form action="" class=" py-4 mb-3 bg-white ">
-
-
-
-                            <div class="mb-4">
-                                <label for="ProductName" class="form-label">
-                                    <h5>Group Name</h5>
-                                </label>
-                                <input type="text" class="form-control fw-light bg-F7F9FC border-0" id="ProductName"
-                                    placeholder="Group Name">
-                            </div>
-
-
-
-                            <div class="mb-4">
-                                <label for="ProductGroup" class="form-label fw-bold">
-                                    <h5>Products in Group</h5>
-                                </label>
-                                <input class="form-control  bg-F7F9FC border-0" type="text" autocomplete="off"
-                                    tabindex="" id="ProductGroup" placeholder="Additional model">
-
-                            </div>
-
-
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                System prompt</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Save Success
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 mt-5 d-flex justify-content-end ">
-                                <button type="button" class="btn btnAdd my-3  px-5 my-3" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Save It
-                                </button>
-                            </div>
-
-
-                        </form>
 
                     </div>
-                </div>
-
-                <div class="  pb-5 px-0 col-12">
-                    <div class="bg-white shadow-sm rounded-2 border-bule px-5 py-4 mb-3">
-                        <h4 class="offcanvas-title" id="offcanvasTopLabel">Edit Group</h4>
-                        <form action="" class=" py-4 mb-3 bg-white ">
-
-                            <input class="form-control me-2 bg-F7F9FC border-0 my-3" type="search" placeholder="Search"
-                                aria-label="Search">
-
-                            <div class="mb-4">
-                                <label for="ProductName" class="form-label">
-                                    <h5>Group Name</h5>
-                                </label><br>
-                                <span class="border-bule px-3 py-2 bg-info-subtle" >IFP65</span>
-                            </div>
+                 </section>  -->
 
 
-
-                            <div class="mb-4">
-                                   <h5 class="py-3">Product in Group</h5>
-                                <div>
-                                    <span class="text-bg-warning p-2">VP1655 X</span>
-                                    <span class="text-bg-warning p-2">VP2788 X</span>
-                                    <span class="text-bg-warning p-2">VG2456-4K X</span>
-                                </div>
-                                
-
-                            </div>
-
-
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                System prompt</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Save Success
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 mt-5 d-flex justify-content-end ">
-                                <button type="button" class="btn btnAdd px-5 my-3" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Save It
-                                </button>
-                            </div>
-
-
-                        </form>
-
-                    </div>
-                </div>  -->
-
-                <!-- <div class="col-12 pb-5 px-0">
+                <!-- <section class="col-12 pb-5 px-0">
                     <div class="bg-white shadow-sm rounded-2 border-bule px-5 py-4 mb-3">
 
                         <h4 class="offcanvas-title">New Product</h4>
@@ -761,7 +750,7 @@
                                 </div>
                             </div>
 
-                          
+
 
                             <div class="col-12 mt-5 d-flex justify-content-end ">
                                 <button type="button" class="btn btnAdd px-5 my-3" data-bs-toggle="modal"
@@ -797,41 +786,37 @@
                         </form>
                     </div>
 
-                </div> -->
+                </section>  -->
 
 
 
-                <!-- <div class=" mt-5 pb-5 px-0 col-12">
-                    <div class="bg-white shadow-sm rounded-2 border-bule px-5 py-4 mb-3">
+                <!-- <section class=" mt-5 pb-5 px-0 col-12">
+                    <div class="bg-white shadow-sm rounded-2 border-bule px-5 py-4 mb-3 productList">
                         <h4>檔案上傳</h4>
                         <form action="" class=" py-4 mb-3 bg-white  ">
 
+                            <div class="mb-5">
+                                <div class=" fw-bold">
+                                    <div class="row px-1 text-info py-3 border-bottom bg-F7F9FC border-bule">
 
+                                        <p class="col-2 text-info">Display Name</p>
+                                        <p class="col-2 text-info">Category of doc/file</p>
 
-                            <div class="row p-3 ">
-                                <div class=" mb-3 fw-bold">
-                                    <div class="row px-1 bg-F7F9FC py-3">
-                                        <div class="col-1">+</div>
-                                        <p class="col-2">Display Name</p>
-                                        <p class="col-2">Category of doc/file</p>
-
-                                        <p class="col-3">File Url</p>
-                                        <p class="col-2">Show</p>
-                                        <p class="col-1 text-center">Delete</p>
+                                        <p class="col-3 text-info">File Url</p>
+                                        <p class="col-2 text-info">Show</p>
+                                        <p class="col-1 text-center text-info">Delete</p>
                                     </div>
                                 </div>
-                                <div action="" class="py-3 border-bottom">
+                                <div action="" class="py-3 border-bottom indexListItem">
                                     <div class="row">
-                                        <div class="col-1">
-                                            +
-                                        </div>
+
                                         <div class=" col-2">
                                             <input type="text" class="form-control border-0 bg-F7F9FC" placeholder="1"
                                                 value=" CDE92UW User Guide">
                                         </div>
                                         <div class=" col-2">
 
-                                            <select class="form-select border-0 bg-eaedf1"
+                                            <select class="form-select border-0 bg-F7F9FC"
                                                 aria-label="Category selection">
                                                 <option selected>User Guides</option>
                                                 <option value="1">One</option>
@@ -844,7 +829,7 @@
 
                                         <div class="col-3">
                                             <input type="text" class="form-control fw-light bg-F7F9FC border-0"
-                                                id="formGroupExampleInput" placeholder="Dropbox URL">
+                                                id="formGroupExampleInput" placeholder="VP1655">
                                         </div>
                                         <div class="col-2">
                                             <div class="form-check form-switch">
@@ -857,7 +842,20 @@
                                                 style="width: 15px;"></div>
                                     </div>
                                 </div>
+
+                                <div action="" class="py-3 border-bottom indexListItem d-flex">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="mx-2">
+                                        <path
+                                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                                    </svg>
+                                    <p class="text-primary">Add File</p>
+
+                                </div>
                             </div>
+
+
+
                             <h5 class="my-2">自動覆蓋</h5>
                             <div class="row mb-4">
                                 <div class="col-1 px-">
@@ -932,214 +930,7 @@
 
                         </form>
                     </div>
-                </div> -->
-
-
-
-
-                <!-- Header Row -->
-                <div class="indexList bg-white px-5 py-4 shadow-sm  col-12 border-bule">
-
-                    <div class="col-12 align-items-center justify-content-between d-flex py-3 mb-3">
-                        <div class="col">
-                            <h4 class="">List Of Product</h4>
-                        </div>
-                        <div class=" col-1 ">
-                            <div class="dropdown">
-                                show
-                                <button class="btn btnUpdate dropdown-toggle " type="button" id="dropdownMenuButton3"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    20
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                    <li><a class="dropdown-item" href="#">20</a></li>
-                                    <li><a class="dropdown-item" href="#">50</a></li>
-                                    <li><a class="dropdown-item" href="#">100</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-                    <div class="row fw-bold  bg-F7F9FC py-3 border-bottom">
-
-                        <div class="col-1 ">Select</div>
-                        <div class="col-2">Name : click to edit info</div>
-                        <div class="col-1">Category</div>
-                        <div class="col-1">Product Line</div>
-                        <div class="col-3">Download Group</div>
-                        <div class="col">Modified</div>
-                        <div class="col">Modified Date</div>
-                    </div>
-
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">.  
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="row align-items-center  border-bottom bg-white  py-4 indexListItem">
-
-                            <div class="col-1 ">
-
-                                <input type="checkbox" class="form-check-input mx-2">
-                            </div>
-                            <div class="col-2"><a href="" class=" ">VP1655</a> </div>
-                            <div class="col-1">Monitor</div>
-                            <div class="col-1">VP series</div>
-                            <div class="col-3">Group Name</div>
-                            <div class="col">Mark</div>
-                            <div class="col">2024/11/1 10:01</div>
-                        </div>
-                    </div>
-
-
-
-                    <nav aria-label="Page navigation example" class="my-3">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                </section> -->
 
 
             </div>

@@ -138,14 +138,80 @@ User fuction
 
 10/17 
 
-    須說明哪邊要 think
-    group list 建立 group manger
-    能夠修改管理 group
-    cn 有 cn 的group , pg 有 pg 的group
-    只產生一個 card
-    版本回覆 使用group manger
-    近來進入 product list
+    index page --
+          須說明哪邊要 think
+          近來進入 product list
 
+    Group list -- 
+          group list 建立 group manger
+          能夠修改管理 group
+          根據不同的user cn 有 cn 的group , pg 有 pg 的group
+    
+    
+    畫面更新 只產生一個 selection
+    版本回覆
+          產品頁面也要有 
+          使用 group manger
+  
 
     星號 視覺更改
+
+    產品info 2個按鈕 還是 1個按鈕 ？？
+    
+10/21
+
+    Upload files 需要提示 
+    
+    Group index vv
+          name 
+          modify User
+          modify Date
+
+     search 在 nav 中 方便快速尋找而不需要 過多的點擊流程     
+     delet Group 需要設定批量刪除媽？？
+     Group
+     Group name
+     Group product
+     add product
+     delet Product
+
+10/22
+     
+     流程確認 ux flow --->> group update
+                     --->> product update
+                     --->> 全域搜尋先保留 ( 不保留 )
+
+
+     Group fuction -- 顯示客制 和 CMS
+                     create group V
+                     Edit group -->>  delet 客制的可以刪除 從 CMS 無法刪除
+                                -->>  edit 現有的 
+                                -->>  upload 檔案
+
+     index page ??
+
+
+
+*需要的功能盡量並在 section
+
+10/23
+
+     檔案上傳 再看怎麼處理 要和 list of product  整併？
+
+     切換 用標題 V
+     index page 顯示 List Of Product 和 search(highlight) V
+
+     Group: List Of Product 增加標籤 可更改和不可更改 --->> UI優化
+            Products in Group 知道要找什麼 product name , list name 可以尋找series
+            create group 按鈕 分開 單一獨立 V
+            group list --->> Delet save revison 平行建立
+            Product in Group --->> added + 需要更多的說明     
+            File upload and settting ＆ Upload files 整併 
+            create & modal 的 product in Group 要對應
+
+
+     product: product list --->> Delet save revison 平行建立
+              File upload and settting ＆ Upload files 整併 
+
+
     

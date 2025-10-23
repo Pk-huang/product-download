@@ -27,7 +27,12 @@ p {
     background: #1379d4;
     color: #000;
     color: #fff;
-    border-radius: 50px;
+    padding: .75em 1.25em ;    
+}
+
+.btnAdd h6{
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 .btnUpdate {
@@ -109,12 +114,12 @@ nav .btn:hover {
     background: #fff !important;
 }
 
-nav .btn:hover  h5{
-   color: #5FA4D7 !important;
+nav .btn:hover h5 {
+    color: #5FA4D7 !important;
 }
 
-nav .btn:hover  svg{
-   fill: #5FA4D7 !important;
+nav .btn:hover svg {
+    fill: #5FA4D7 !important;
 }
 
 /* nav .active{
@@ -126,32 +131,32 @@ nav .btn:hover  svg{
     background: #f7f9fcdc !important;
 }
 
-.accordion-button{
-     background: #fff !important;
+.accordion-button {
+    background: #fff !important;
 }
 
-.accordion-button h5{
-   color: #5FA4D7 !important;
+.accordion-button h5 {
+    color: #5FA4D7 !important;
 }
 
-.accordion-button svg{
-   fill: #5FA4D7 !important;
+.accordion-button svg {
+    fill: #5FA4D7 !important;
 }
 
-.accordion-button.collapsed{
-     background: transparent !important;
+.accordion-button.collapsed {
+    background: transparent !important;
 }
 
-.accordion-button.collapsed h5{
+.accordion-button.collapsed h5 {
     color: #fff !important;
 }
 
-.accordion-button.collapsed svg{
-   fill: #fff !important;
+.accordion-button.collapsed svg {
+    fill: #fff !important;
 }
 
-.show button{
-     background: #5797c9 !important;
+.show button {
+    background: #5797c9 !important;
 }
 
 .productList svg {
@@ -160,4 +165,10 @@ nav .btn:hover  svg{
     fill: #0091ff;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+.search-bar svg {
+    width: 40px;
+    height: 40px;
+    fill: #5d5d5d;
 }
