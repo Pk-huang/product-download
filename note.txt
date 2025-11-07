@@ -201,17 +201,63 @@ User fuction
      切換 用標題 V
      index page 顯示 List Of Product 和 search(highlight) V
 
-     Group: List Of Product 增加標籤 可更改和不可更改 --->> UI優化
-            Products in Group 知道要找什麼 product name , list name 可以尋找series
-            create group 按鈕 分開 單一獨立 V
+     Group: List Of Product 增加標籤 可更改和不可更改 --->> UI優化 VV
+            Products in Group 知道要找什麼 product name , list name 可以尋找series 
+
+            create group 按鈕 分開 單一獨立 VV
             group list --->> Delet save revison 平行建立
-            Product in Group --->> added + 需要更多的說明     
             File upload and settting ＆ Upload files 整併 
-            create & modal 的 product in Group 要對應
+            Product in Group --->> added + 需要更多的說明     
+        
+            create & modal 的 product in Group 要對應 ---- 直接將建立 和群組內容 使用同一套ui
 
 
      product: product list --->> Delet save revison 平行建立
               File upload and settting ＆ Upload files 整併 
 
 
-    
+10/28
+
+     revison 是要指全部的編輯 還是個別的紀錄
+
+     create Group 可以和 group item 合併
+
+10/30 
+
+     Products in Group 知道要找什麼 product name , list name 可以尋找series 
+     File upload and settting ＆ Upload files 整併 V
+     group list --->> Delet save revison 平行建立
+     Product in Group --->> added + 需要更多的說明 
+
+
+     刪除是否要在該產品選項裡面直接加 X 或是 使用 反選的方是( 決定 表單是否的呈現方式 )
+
+     product in group  ---> 需要顯示 product 和 Series
+                       ---> ui 的呈現方式            
+
+10/31 
+      Group Name --> ui 調整 VV
+      Product in Group 先改中文 VV
+      建立階層 product --> series 
+
+      File upload and settting 的add 位置 VV
+                               list 的 刪除 +
+
+     勁量用真的資料
+
+     上方 delet 不需勾選 VV
+     特別的 ui 
+     建立  step
+
+     list 建立上傳...ui 
+          search 和 create 分開 VV
+          selet 可以刪除 VV
+          section 建議 編輯 鍵 VV
+
+     group 需要上傳時 點擊上傳按鈕 開啟功能
+           反之
+ 
+     cn pg 分開件力
+
+11/4
+    添加 全 域 搜尋 搜尋下載項目

@@ -1,6 +1,22 @@
 body {
-    background: #f8f9fa;
+    background-color: var(--bs-light);
 }
+
+:root {
+    --my-panel-bg: var(--bs-white);
+    --my-panel-color: var(--bs-dark);
+}
+
+[data-bs-theme="dark"] {
+    --my-panel-bg: var(--bs-dark);
+    --my-panel-color: var(--bs-light);
+}
+
+section {
+    background-color: var(--my-panel-bg);
+    color: var(--my-panel-color);
+}
+
 
 
 h4 {
@@ -23,18 +39,6 @@ p {
     color: #000;
 }
 
-.btnAdd {
-    background: #1379d4;
-    color: #000;
-    color: #fff;
-    padding: .75em 1.25em ;    
-}
-
-.btnAdd h6{
-    margin-bottom: 0;
-    font-weight: 600;
-}
-
 .btnUpdate {
     background: #EBEFF5;
 }
@@ -45,7 +49,6 @@ p {
 }
 
 .btnAdd svg {
-    height: 16px;
     fill: #fff;
 }
 
@@ -57,6 +60,25 @@ p {
 .btn:hover {
     background: #d6edff;
     color: #000;
+}
+
+
+.btnAdd {
+    background: #1379d4;
+    color: #000;
+    color: #fff;
+    padding: .75em 1.25em;
+}
+
+.btnAdd svg {
+    width: 2rem;
+    height:2rem;
+    fill: #fff ;
+}
+
+.btnAdd h6 {
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 
@@ -80,6 +102,10 @@ p {
 }
 
 
+.border-green {
+    border: 3px solid #6fda5e;
+}
+
 .bg-F7F9FC {
     background-color: #F7F9FC;
 }
@@ -101,13 +127,13 @@ nav .btn {
 }
 
 nav h5 {
-    color: #fff;
+    color: #000000;
     margin-bottom: 0;
     margin-left: .75rem;
 }
 
 nav svg {
-    fill: #fff;
+    fill: #000000;
 }
 
 nav .btn:hover {
@@ -119,7 +145,7 @@ nav .btn:hover h5 {
 }
 
 nav .btn:hover svg {
-    fill: #5FA4D7 !important;
+    fill: #000000 !important;
 }
 
 /* nav .active{
@@ -131,7 +157,19 @@ nav .btn:hover svg {
     background: #f7f9fcdc !important;
 }
 
-.accordion-button {
+
+.editIcon svg{
+    width: 1.5rem ;
+    height: auto ;
+    fill: #000000;
+}
+
+.groupNameIcon{
+    width: 1.5em ;
+    fill: rgba(var(--bs-warning-rgb));
+}
+
+/* .accordion-button {
     background: #fff !important;
 }
 
@@ -153,13 +191,13 @@ nav .btn:hover svg {
 
 .accordion-button.collapsed svg {
     fill: #fff !important;
-}
+} */
 
 .show button {
     background: #5797c9 !important;
 }
 
-.productList svg {
+.tilteIcon {
     width: 24px;
     height: 24px;
     fill: #0091ff;
@@ -168,7 +206,50 @@ nav .btn:hover svg {
 }
 
 .search-bar svg {
-    width: 40px;
-    height: 40px;
+    aspect-ratio: 1 / 1;
+    height: 2em;
     fill: #5d5d5d;
+    margin: 0 .5em;
 }
+
+.GroupedItem {
+    /* background-color: #5797c9; */
+}
+
+.GroupedItem svg {
+    width: 15px !important;
+    height: auto !important;
+    fill: #000000;
+}
+
+/* .GroupedItem.group {
+     border-left: 3px solid #d4b413; 
+}
+
+.GroupedItem.prodcut {
+     border-left: 3px solid #1379d4; 
+} */
+
+.GroupedItem:hover svg {
+    fill: #ff0000;
+}
+
+.uploadItem{
+    border-left: 3px solid #1379d4;    
+}
+
+.uploadItem svg {
+    width: 32px !important;
+    height: 32px !important;
+    fill: #1379d4;
+}
+
+.uploadProdcutItem{
+    border-left: 3px solid #1379d4;    
+}
+
+/* .uploadItem svg {
+    width: 32px !important;
+    height: 32px !important;
+    fill: #1379d4;
+} */
