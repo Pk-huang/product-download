@@ -30,15 +30,6 @@ p {
 }
 
 
-.btn {
-    /* background: #B2D7F1; */
-    border: unset;
-    border-radius: 20px;
-    /* color: #fff; */
-    border: 1px #5Ea4DA solid;
-    color: #000;
-}
-
 .btnUpdate {
     background: #EBEFF5;
 }
@@ -48,32 +39,20 @@ p {
     width: 16px;
 }
 
-.btnAdd svg {
-    fill: #fff;
-}
 
-.btnAdd:hover svg {
-    fill: #000;
-}
-
-
-.btn:hover {
-    background: #d6edff;
-    color: #000;
-}
 
 
 .btnAdd {
-    background: #1379d4;
-    color: #000;
+    background: #006eff;
+    border: 2px solid #006eff;
     color: #fff;
-    padding: .75em 1.25em;
+    padding: .5rem 1rem;
 }
 
 .btnAdd svg {
-    width: 2rem;
-    height:2rem;
-    fill: #fff ;
+    width: 24px;
+    height: 100%;
+    fill: #fff;
 }
 
 .btnAdd h6 {
@@ -81,6 +60,36 @@ p {
     font-weight: 600;
 }
 
+.btnAdd:hover svg {
+    fill: #006eff;
+}
+
+
+.btnAdd:hover {
+    border: 2px solid #006eff;
+    color: #006eff;
+}
+
+.btnCreate {
+    border: 2px solid #006eff;
+    color: #006eff;
+    padding: .5rem 1rem;
+}
+
+.btnCreate svg {
+    width: 24px;
+    height: 100%;
+    fill: #006eff;
+}
+
+.btnCreate:hover {
+    background: #006eff;
+    color: #fff;
+}
+
+.btnCreate:hover svg {
+    fill: #fff;
+}
 
 .form-check-input {
     border: 1px solid #1c1c1c;
@@ -97,105 +106,86 @@ p {
     border-bottom: 3px solid #5Ea4DA;
 }
 
-.border-red {
-    border-bottom: 3px solid #da5e5e;
-}
-
-
-.border-green {
-    border: 3px solid #6fda5e;
-}
 
 .bg-F7F9FC {
     background-color: #F7F9FC;
 }
 
-.bg-eaedf1 {
-    background-color: #eaedf1;
-}
 
-/* 10/2 */
-
-nav .btn {
-    text-align: left;
-    width: 100%;
-    border: unset;
-    border-radius: unset;
-    padding: .5rem 2em .5rem 2em;
-    display: flex;
-    margin: .25rem 0;
-}
-
-nav h5 {
+nav h6 {
     color: #000000;
     margin-bottom: 0;
     margin-left: .75rem;
 }
 
 nav svg {
+    width: 15px;
     fill: #000000;
 }
 
 nav .btn:hover {
-    background: #fff !important;
+    background: #ebeef2 !important;
 }
 
-nav .btn:hover h5 {
+
+nav .active {
+    background: #F7F9FC !important;
+    border-right: 3px solid #5FA4D7 !important;
+}
+
+nav .active h5 {
     color: #5FA4D7 !important;
 }
 
-nav .btn:hover svg {
-    fill: #000000 !important;
+nav .active svg {
+    fill: #5FA4D7;
 }
 
-/* nav .active{
-    color: #fff !important;
-    background: #383838 !important;
-} */
-
-.indexListItem:hover {
-    background: #f7f9fcdc !important;
+.groupNameIcon svg,
+.productNameIcon svg {
+    width: 20px;
 }
 
-
-.editIcon svg{
-    width: 1.5rem ;
-    height: auto ;
-    fill: #000000;
+.groupNameIcon svg {
+    fill: #3d9be2;
 }
 
-.groupNameIcon{
-    width: 1.5em ;
-    fill: rgba(var(--bs-warning-rgb));
+.groupNameIcon span {
+    color: #3d9be2;
 }
 
-/* .accordion-button {
-    background: #fff !important;
+.productNameIcon svg {
+    fill: #51bd37;
 }
 
-.accordion-button h5 {
-    color: #5FA4D7 !important;
+.productNameIcon span {
+    color: #51bd37;
 }
 
-.accordion-button svg {
-    fill: #5FA4D7 !important;
+.form-switch {
+    width: max-content;
+    margin: 0 auto;
 }
 
-.accordion-button.collapsed {
-    background: transparent !important;
+.editIcon{
+    display: flex;
+    justify-content: center;
 }
 
-.accordion-button.collapsed h5 {
-    color: #fff !important;
+.editIcon svg {
+    width: 35px !important;
+    height: auto;
+    fill: #5Ea4DA;
 }
 
-.accordion-button.collapsed svg {
-    fill: #fff !important;
-} */
-
-.show button {
-    background: #5797c9 !important;
+.editIcon button {
+    padding: .25rem .75rem;
 }
+
+.editIcon button:hover svg {
+    fill: #68d05a;
+}
+
 
 .tilteIcon {
     width: 24px;
@@ -212,30 +202,34 @@ nav .btn:hover svg {
     margin: 0 .5em;
 }
 
-.GroupedItem {
-    /* background-color: #5797c9; */
+.Grouped-product svg {
+    /* fill: #1379d4; */
+    width: 25px;
+    height: 25px;
 }
 
-.GroupedItem svg {
-    width: 15px !important;
-    height: auto !important;
-    fill: #000000;
+
+.Grouped-product .modal-body li {
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: .25em 1.25em;
+    margin: .75rem auto;
+    height: max-content;
+    flex: 0 0 17.5%;
+    list-style: none;
+    color: #0091ff;
+    border: 2px solid #0091ff;
 }
 
-/* .GroupedItem.group {
-     border-left: 3px solid #d4b413; 
+
+.Grouped-product .col p {
+    /* color: #1379d4; */
 }
 
-.GroupedItem.prodcut {
-     border-left: 3px solid #1379d4; 
-} */
 
-.GroupedItem:hover svg {
-    fill: #ff0000;
-}
-
-.uploadItem{
-    border-left: 3px solid #1379d4;    
+.uploadItem {
+    border-left: 3px solid #1379d4;
 }
 
 .uploadItem svg {
@@ -244,12 +238,77 @@ nav .btn:hover svg {
     fill: #1379d4;
 }
 
-.uploadProdcutItem{
-    border-left: 3px solid #1379d4;    
+.uploadProdcutItem {
+    border-left: 3px solid #1379d4;
 }
 
-/* .uploadItem svg {
-    width: 32px !important;
-    height: 32px !important;
-    fill: #1379d4;
-} */
+
+
+.group-tag-input:focus {
+
+    color: var(--bs-body-color);
+    background-color: transparent;
+    border-color: #86b7fe;
+    box-shadow: none !important;
+    /* 去除藍色外框陰影 */
+    height: 100%;
+    outline: none !important;
+    caret-color: #000;      /* 游標改成黑色（更明顯） */
+ 
+}
+
+.group-input {
+    /* background: #3d9be2b3; */
+    background: #fff;
+    /* color: #3d9be2; */
+    font-weight: 600;
+    /* color: #fff; */
+    padding: .25em 1.25em;
+    margin: .75rem .25rem;
+    display: flex;
+    align-items: center;
+    /* border-radius: 8px; */
+    
+    /* box-shadow: 0 0px 5px rgba(0, 0, 0, 0.118); */
+    /* border: 1px solid #3d9be2; */
+}
+
+.group-input.group {
+    /* background: #51bd37; */
+    border: 3px solid #51bd37;
+    color: #51bd37;
+}
+
+.group-input svg {
+    width: 20px;
+    height: 20px;
+    /* margin: 0 0 0 .25rem;
+    fill: #3d9be2; */
+}
+
+.group-input.group svg {
+    fill: #51bd37;
+}
+
+.modal-header,
+.modal-footer {
+    border: unset;
+}
+
+
+
+  #tooltip {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  .check-products-button svg {
+    fill: #198754 ;
+  }
+
+  .check-products-button:hover svg {
+    fill: #fff;
+  }

@@ -261,3 +261,47 @@ User fuction
 
 11/4
     添加 全 域 搜尋 搜尋下載項目
+11/24
+     Search for Products or Series to add to Group 和 product 有些重複
+     table 的呈現在調整
+
+     如果來自CMS是無法更改群組內的產品－－－改藍色字 vv
+
+     cus default 各家一個標籤 vv
+
+    
+     icon 更搭衣店 vv --->更改顏色
+
+    
+   
+
+     新建系列 已cms為主 如果錯了會更新成cms --> jared
+
+    
+     show 改 on off -- padding改一下 VV
+     
+
+
+12/1 
+    Edit or Upload-- button ＋tips VV
+    cut product 固定的言色 VV
+    checklist product popout vv
+    儲存玩popout 出現度夜面或是漲船 VV
+    button 顏色更強
+
+    icon 更改顏色
+
+12/4
+
+    如果來自CMS是無法更改群組內的產品 ---->改成預設顏色 
+    tag 預設的就一班社 vv
+     checkproduct 先拿掉 vv
+
+     請選擇要隱藏的國家 --> vse vsi vsa VV
+     建立欄位 丟下去 VV ---> 欄位是空的時候 只顯示 新增
+     輸入欄的顏色調整 顯示游標 
+     Edit or Upload 靠右 vv
+     source 改一下 vv
+
+     選擇呈現的數目 跟 產品線 是否放在一起
+     
