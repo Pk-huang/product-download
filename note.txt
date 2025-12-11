@@ -304,4 +304,33 @@ User fuction
      source 改一下 vv
 
      選擇呈現的數目 跟 產品線 是否放在一起
-     
+
+12/5
+    table 第一個字大寫
+    icon 使用權組建立 可以更改產品顏色 --再決定
+    系列參考 ifp
+
+          ALL (Product Line)>>>     產品系列
+
+     product 的     Edit or Upload icon 一顆就好 近來全部給他 vv
+
+     grouptag 顏色用 500 vv
+     文字敘述剪短 --
+
+12/9 
+
+    文字先暫時擱置 
+    table 第一個字大寫
+
+    product list
+    Edit or Upload --->> update vv
+                   --->> icon 再選一下 
+
+   系列名稱 -->> jared
+
+   on/off 和隱藏國家 整併 vv
+   767676 加入seclection 字體加粗 vv
+   search icon 並入搜尋列 vv
+   button 醫治寬度 vv 
+
+   

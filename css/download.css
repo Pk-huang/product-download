@@ -5,6 +5,7 @@ body {
 :root {
     --my-panel-bg: var(--bs-white);
     --my-panel-color: var(--bs-dark);
+    --vsbds-color-sky-500: #147AC8;
 }
 
 [data-bs-theme="dark"] {
@@ -16,6 +17,14 @@ section {
     background-color: var(--my-panel-bg);
     color: var(--my-panel-color);
 }
+
+.dropdown-menu {
+    min-width: 100%;
+    /* 至少跟按鈕一樣寬 */
+    width: auto;
+    /* 內容變寬時可自動增大 */
+}
+
 
 
 
@@ -41,10 +50,9 @@ p {
 
 
 
-
 .btnAdd {
-    background: #006eff;
-    border: 2px solid #006eff;
+    background: var(--vsbds-color-sky-500);
+    border: 2px solid var(--vsbds-color-sky-500);
     color: #fff;
     padding: .5rem 1rem;
 }
@@ -61,34 +69,41 @@ p {
 }
 
 .btnAdd:hover svg {
-    fill: #006eff;
+    fill: var(--vsbds-color-sky-500);
 }
 
 
 .btnAdd:hover {
-    border: 2px solid #006eff;
-    color: #006eff;
+    border: 2px solid var(--vsbds-color-sky-500);
+    color: var(--vsbds-color-sky-500);
 }
 
 .btnCreate {
-    border: 2px solid #006eff;
-    color: #006eff;
+    border: 2px solid var(--vsbds-color-sky-500);
+    color: var(--vsbds-color-sky-500);
     padding: .5rem 1rem;
 }
 
 .btnCreate svg {
     width: 24px;
     height: 100%;
-    fill: #006eff;
+    fill: var(--vsbds-color-sky-500);
 }
 
 .btnCreate:hover {
-    background: #006eff;
+    background: var(--vsbds-color-sky-500);
     color: #fff;
 }
 
 .btnCreate:hover svg {
     fill: #fff;
+}
+
+
+.btnAdd,
+.btnCreate {
+    min-width: 160px;
+    justify-content: center;
 }
 
 .form-check-input {
@@ -108,7 +123,7 @@ p {
 
 
 .bg-F7F9FC {
-    background-color: #F7F9FC;
+    background-color: #F6F6F6;
 }
 
 
@@ -146,20 +161,20 @@ nav .active svg {
     width: 20px;
 }
 
-.groupNameIcon svg {
+/* .groupNameIcon svg {
     fill: #3d9be2;
 }
 
 .groupNameIcon span {
     color: #3d9be2;
-}
+} */
 
 .productNameIcon svg {
-    fill: #51bd37;
+    fill: var(--vsbds-color-sky-500);
 }
 
 .productNameIcon span {
-    color: #51bd37;
+    color: var(--vsbds-color-sky-500);
 }
 
 .form-switch {
@@ -167,7 +182,7 @@ nav .active svg {
     margin: 0 auto;
 }
 
-.editIcon{
+.editIcon {
     display: flex;
     justify-content: center;
 }
@@ -175,7 +190,7 @@ nav .active svg {
 .editIcon svg {
     width: 35px !important;
     height: auto;
-    fill: #5Ea4DA;
+    fill: var(--vsbds-color-sky-500);
 }
 
 .editIcon button {
@@ -183,7 +198,7 @@ nav .active svg {
 }
 
 .editIcon button:hover svg {
-    fill: #68d05a;
+    fill: #5EA4DA;
 }
 
 
@@ -253,13 +268,14 @@ nav .active svg {
     /* 去除藍色外框陰影 */
     height: 100%;
     outline: none !important;
-    caret-color: #000;      /* 游標改成黑色（更明顯） */
- 
+    caret-color: #000;
+    /* 游標改成黑色（更明顯） */
+
 }
 
 .group-input {
-    /* background: #3d9be2b3; */
-    background: #fff;
+    background: #EBF6FF;
+    /* background: #fff; */
     /* color: #3d9be2; */
     font-weight: 600;
     /* color: #fff; */
@@ -268,15 +284,15 @@ nav .active svg {
     display: flex;
     align-items: center;
     /* border-radius: 8px; */
-    
+
     /* box-shadow: 0 0px 5px rgba(0, 0, 0, 0.118); */
     /* border: 1px solid #3d9be2; */
 }
 
 .group-input.group {
-    /* background: #51bd37; */
-    border: 3px solid #51bd37;
-    color: #51bd37;
+    background: var(--vsbds-color-sky-500);
+    /* border: 3px solid #51bd37; */
+    color: #fff;
 }
 
 .group-input svg {
@@ -287,7 +303,7 @@ nav .active svg {
 }
 
 .group-input.group svg {
-    fill: #51bd37;
+    fill: #fff;
 }
 
 .modal-header,
@@ -297,18 +313,45 @@ nav .active svg {
 
 
 
-  #tooltip {
+#tooltip {
     background-color: #333;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 13px;
-  }
+}
 
-  .check-products-button svg {
-    fill: #198754 ;
-  }
+.check-products-button svg {
+    fill: #198754;
+}
 
-  .check-products-button:hover svg {
+.check-products-button:hover svg {
     fill: #fff;
-  }
+}
+
+.table-filiter select{
+    border: 1px solid #767676;
+    font-weight: 600;
+}
+
+
+.table-filiter select:hover {
+    color: var(--vsbds-color-sky-500);
+    background-color: transparent;
+    border-color: var(--vsbds-color-sky-500);
+}
+
+.controlIcon svg {
+    width: 30px;
+    height: 30px;
+    margin: .25em ;
+    /* fill: #5FA4D7; */
+}
+
+.upload-form-list form:hover{
+    transition: .1s;
+}
+
+.upload-form-list form:hover{
+    background: #F6F6F6;
+}
