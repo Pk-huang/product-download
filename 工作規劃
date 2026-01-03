@@ -1,0 +1,74 @@
+uiux  -- 畫面優化 
+         流程欄位 
+
+
+環境 pyton react ts         
+
+front -- 使用 react 和 ts  
+         建立畫面 
+         串接 api
+         建立使用者的功能
+
+backend -- 
+
+            上傳檔案
+                    userguide , Technical documents 
+                        >> 由 ftp 上傳 並放置對應的資料夾 >> 根據檔名 ( 須有固定格式 jared 定義 ) 建立下載目錄
+                                ex: vp2766 UserGuide (VN) 
+
+                    其他下載 
+                        >> 提供dropbox 連結  >> 後台自動下載到主機 需要判斷連結是否有效 可以下載
+                        >> 不提供其他dropbox 連結 >>  直接建立下載目錄
+
+            更新檔案 
+                    userguide , Technical documents 
+                        >> 直接覆蓋 並且清理快取
+
+                    其他下載 
+                        >> 更新欄位時  是否要刪除舊版的檔案 --> 由後台 (jared) 決定 
+            刪除檔案    
+                    userguide , Technical documents 
+                        >> 刪除對應的下載目錄
+
+                    其他下載 
+                        >> 刪除對應的下載目錄 以及 主機上的檔案 ( 如果有的話 )           
+
+            API
+                    product 
+                            get API
+                                        -- Group Name >> 第一位使用者建立
+                                        Product Category >> 第一位使用者建立 ( 如果 cms 有的話 以 cms 為主 -- 後台自動更新 (jared) ) 
+                                        系列名稱  >> 顯示而已--沒顯示的話就是空值 ( 如果 cms 有的話 以 cms 為主 -- 後台自動更新 (jared) ) 
+                                        
+                                        下載內容 依據資料庫內容提供
+
+                            post API
+                                        根據更改內容 回傳     
+
+                    Group  
+                            get API
+                                        Group Name
+                                        群組中的產品 / 系列
+                                            並且取得 產品 / 系列 的 -- Name , Procdut / Group ,Category ,Series 
+                                        
+                                        下載內容
+                            post API
+                                       根據更改內容 回傳     
+
+            ftp 拉取
+                    定時拉取 ftp 上的檔案 
+                    
+                    設置按鈕 可以手動拉曲
+
+
+            premison
+                    管理員 
+                            全部權限
+
+                    一般使用者
+                            !! 在討論 !!
+ 
+
+            
+                
+            
